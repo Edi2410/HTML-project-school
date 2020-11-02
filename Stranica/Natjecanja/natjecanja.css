@@ -1,0 +1,106 @@
+body {
+    background:url("../ETS.jpg");
+    background-color: #cccccc; 
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#logo {
+    display:block;
+    text-align: left;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: one;
+    animation-direction: alternate;
+}
+    
+@keyframes slidein {
+    from {
+     margin-left: 100%;
+     width: 300%; 
+    }
+    
+    to {
+     margin-left: 0%;
+     width: 100%;
+    }
+}
+    
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 0;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+}
+#cssmenu {
+  font-family: Montserrat, sans-serif;
+  background: #333333;
+  margin-bottom: 25px;
+}
+#cssmenu>ul>li {
+  float: left;
+  transition: width 2s, height 2s, transform 2s;
+  border: 1px solid black;
+}
+#cssmenu>ul>li:hover{
+  width:150px;
+  height:50px;
+  transform: rotate(360deg);
+}
+#cssmenu>ul>li>a {
+  padding: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #dddddd;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color .25s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+    
+#photo1{
+    background-color: white;
+    padding: 6px;
+    display: contents;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+#photo2{
+    
+    padding: 6px;
+    display: contents;
+}
+.container {
+    position: relative;
+    max-width: 500px;
+    margin: 50px 25px 70px 25px;
+    display: inline-block;
+  }
+.container img {vertical-align: middle;}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    padding: 4px;
+  }
+
