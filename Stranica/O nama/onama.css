@@ -1,35 +1,33 @@
 body {
-  background: url("../ETS.jpg");
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  background-attachment: fixed;
+    background:url("../ETS.jpg");
+    background-color: #cccccc; 
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
 }
 
 #logo {
-  display: block;
-  text-align: left;
-  animation-duration: 3s;
-  animation-name: slidein;
+    display:block;
+    text-align: left;
+    animation-duration: 3s;
+    animation-name:slidein;
 }
-
+    
 @keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
+    from {
+     margin-left: 100%;
+     width: 300%; 
+    }
+    
+    to {
+     margin-left: 0%;
+     width: 100%;
+    }
 }
-
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -44,26 +42,22 @@ body {
   position: relative;
   box-sizing: border-box;
 }
-
 #cssmenu {
   font-family: Montserrat, sans-serif;
   background: #333333;
   margin-bottom: 25px;
 }
-
-#cssmenu > ul > li {
+#cssmenu>ul>li {
   float: left;
   transition: width 2s, height 2s, transform 2s;
   border: 1px solid black;
 }
-
-#cssmenu > ul > li:hover {
-  width: 150px;
-  height: 50px;
+#cssmenu>ul>li:hover{
+  width:150px;
+  height:50px;
   transform: rotate(360deg);
 }
-
-#cssmenu > ul > li > a {
+#cssmenu>ul>li>a {
   padding: 20px;
   font-size: 12px;
   letter-spacing: 1px;
@@ -76,9 +70,9 @@ body {
   text-transform: uppercase;
 }
 
-#opis {
-  background-color: rgba(59, 147, 248, 0.76);
-  font-size: 20px;
-  font-family: "Bahnschrift SemiBold";
-
+#opis{
+    background-color: rgba(59, 147, 248, 0.76);
+    font-size:20px;
+    font-family: "Bahnschrift SemiBold";
+    
 }
