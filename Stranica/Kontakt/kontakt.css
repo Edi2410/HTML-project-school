@@ -1,27 +1,28 @@
 body {
-    background:url("../ETS.jpg");
-    background-color: #cccccc; 
-      height: 500px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      background-attachment: fixed;
-    }
+  background: url("../ETS.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
 
 #logo {
-    display:block;
-    text-align: left;
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: one;
-    animation-direction: alternate;
-    text-decoration: none;
+  display: block;
+  text-align: left;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: one;
+  animation-direction: alternate;
+  text-decoration: none;
 }
+
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -29,7 +30,9 @@ body {
     width: 100%;
   }
 }
+
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -44,22 +47,26 @@ body {
   position: relative;
   box-sizing: border-box;
 }
+
 #cssmenu {
   font-family: Montserrat, sans-serif;
   background: #333333;
   margin-bottom: 25px;
 }
-#cssmenu>ul>li {
+
+#cssmenu > ul > li {
   float: left;
   transition: width 2s, height 2s, transform 2s;
   border: 1px solid black;
 }
-#cssmenu>ul>li:hover{
-  width:150px;
-  height:50px;
+
+#cssmenu > ul > li:hover {
+  width: 150px;
+  height: 50px;
   transform: rotate(360deg);
 }
-#cssmenu>ul>li>a {
+
+#cssmenu > ul > li > a {
   padding: 20px;
   font-size: 12px;
   letter-spacing: 1px;
@@ -72,45 +79,51 @@ body {
   text-transform: uppercase;
 }
 
-input[type=text], select {
+input[type=text],
+select {
   background-color: rgba(158, 173, 173, 0.301);
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 1px solid #ccc;
-border-radius: 25px;
-box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
 }
 
 input[type=submit] {
-width: 100%;
-background-color: #4315e9;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border-radius: 25px;
-cursor: pointer;
+  width: 100%;
+  background-color: #4315e9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 25px;
+  cursor: pointer;
 
 }
+
 input[type=submit]:hover {
-background-color: #f0221b;
+  background-color: #f0221b;
 }
+
 #poruka {
-  border-radius:50px;
+  border-radius: 50px;
   background-color: #f2f2f2;
   padding: 40px;
   width: 40%
 }
-#kontakt{
-  font-family:"Arial Black";
+
+#kontakt {
+  font-family: "Arial Black";
   text-decoration: none;
   font-size: 20px;
-  background-color:rgba(58, 137, 241, 0.555);
+  background-color: rgba(58, 137, 241, 0.555);
 }
+
 iframe {
   width: 50%;
 }
+
 @media only screen and (max-width: 768px) {
   * {
     -webkit-tap-highlight-color: transparent;
@@ -123,7 +136,7 @@ iframe {
   #links {
     all: unset;
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     justify-content: center;
   }
 

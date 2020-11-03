@@ -1,7 +1,25 @@
+html,
+body {
+  overflow: hidden;
+}
+
+#home {
+  transform: scale(0.5);
+  transform-origin: top;
+  animation: showHome 2s forwards;
+}
+
+@keyframes showHome {
+  to {
+    transform: scale(1);
+  }
+}
+
 
 body {
-background:url("../ETS.jpg");
-background-color: #cccccc; 
+  min-height: 100vh;
+  background: url("../ETS.jpg");
+  background-color: #cccccc;
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,21 +27,22 @@ background-color: #cccccc;
   position: relative;
   background-attachment: fixed;
 }
+
 #logo {
-    margin:5% auto;
-    display:block;
-    text-align: center;
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-iteration-count: one;
-    animation-direction: alternate;
+  margin: 5% auto;
+  display: block;
+  text-align: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: one;
+  animation-direction: alternate;
 }
 
 
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -33,6 +52,7 @@ background-color: #cccccc;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -47,23 +67,27 @@ background-color: #cccccc;
   position: relative;
   box-sizing: border-box;
 }
+
 #cssmenu {
   font-family: Montserrat, sans-serif;
   background: #333333;
-  left:630px;
+  left: 630px;
   margin-bottom: 25px;
 }
-#cssmenu>ul>li {
+
+#cssmenu > ul > li {
   float: left;
   transition: width 2s, height 2s, transform 2s;
   border: 1px solid black;
 }
-#cssmenu>ul>li:hover{
-  width:150px;
-  height:50px;
+
+#cssmenu > ul > li:hover {
+  width: 150px;
+  height: 50px;
   transform: rotate(360deg);
 }
-#cssmenu>ul>li>a {
+
+#cssmenu > ul > li > a {
   padding: 20px;
   font-size: 12px;
   letter-spacing: 1px;
@@ -77,21 +101,21 @@ background-color: #cccccc;
 }
 
 #home {
-  font-size:20px;
+  font-size: 20px;
   text-align: top;
   font-style: bold;
-  font-family: Impact, Charcoal, serif ;
-  border:1px solid rgba(255, 255, 255, 0.726);
+  font-family: Impact, Charcoal, serif;
+  border: 1px solid rgba(255, 255, 255, 0.726);
   Background-color: rgba(255, 255, 255, 0.568);
-  margin:0px 300px 100px 300px;
+  margin: 0px 300px 100px 300px;
 }
-    
 
 
-#naslov{
+
+#naslov {
   text-align: center;
-  text-decoration-line:bold;
-  font-size:25px;
+  text-decoration-line: bold;
+  font-size: 25px;
 }
 
 
@@ -109,7 +133,7 @@ background-color: #cccccc;
   #links {
     all: unset;
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
